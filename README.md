@@ -1,12 +1,76 @@
-# React + Vite
+# ✨ Collaborative Text Editor
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A **real-time collaborative text editor** built with **React**, **Vite**, **Tailwind CSS**, and **Yjs**. Multiple users can edit the same document simultaneously with live updates and rich text formatting (bold, italic, underline, colors, font sizes, etc.).
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 📌 Features
 
-## Expanding the ESLint configuration
+- Real-time collaboration using Yjs + WebSocket
+- Rich text formatting options
+- Personalized usernames (stored in browser)
+- Built with React + Vite for fast performance
+- Styled with Tailwind CSS
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 🚀 How to Run the Project
+
+### 1. **Clone the Repository**
+```bash 
+git clone https://github.com/ikrajnish/wasserstoff.git
+cd wasserstoff
+## 2.Install Dependencies
+     Make sure you have Node.js and npm installed.
+bash
+npm install
+## 3. Run the Development Server
+bash
+npm run dev
+After running, open your browser and go to:
+
+http://localhost:5173
+
+🛠 Tech Stack
+React + Vite
+
+Tailwind CSS
+
+Yjs (shared data model)
+
+y-websocket (real-time sync)
+
+React Router (for routing between username and editor pages)
+
+💡 How It Works
+Users enter a username to join.
+
+The editor connects to the shared document using Yjs and WebSocket (wss://demos.yjs.dev).
+
+Any text typed is instantly shared with all other users in the same document.
+
+Formatting uses document.execCommand() to apply styles to selected text.
+
+🖼 Preview
+Open the editor in multiple tabs or windows to see live collaborative editing in action.
+
+📄 License
+MIT License
+
+👤 Author
+Rajnish Kumar
+
+yaml
+Copy
+Edit
+
+---
+
+Let me know if you want:
+- https://wasserstoff-pi.vercel.app/
+
+
+
+
+
+
